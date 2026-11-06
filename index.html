@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>Aswin Kumar | Aspiring Ethical Hacker & Cybersecurity Enthusiast</title>
+  <meta name="title" content="Aswin Kumar | Aspiring Ethical Hacker & Cybersecurity Enthusiast">
+  <meta name="description" content="Portfolio of Aswin Kumar - 2nd year B.E. Computer Science and Design student at SNS College of Technology. Focused on cybersecurity, network defense, web security, and problem solving.">
+  <meta name="keywords" content="Aswin Kumar, Ethical Hacker, Cybersecurity, Network Security, Penetration Testing, OWASP, Python, Portfolio">
+  <meta name="author" content="Aswin Kumar">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aswinkumar.dev/">
+  <meta property="og:title" content="Aswin Kumar | Aspiring Ethical Hacker & Cybersecurity Enthusiast">
+  <meta property="og:description" content="Explore my cybersecurity projects, interactive simulated terminal, technical writeups, and ethical hacking journey.">
+  <meta property="og:image" content="assets/aswin.jpg">
+
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://aswinkumar.dev/">
+  <meta property="twitter:title" content="Aswin Kumar | Aspiring Ethical Hacker">
+  <meta property="twitter:description" content="Explore cybersecurity projects, simulated terminal, and technical writeups by Aswin Kumar.">
+  <meta property="twitter:image" content="assets/aswin.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: JetBrains Mono & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/story.css">
+
+  <!-- Structured Data: Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aswin Kumar",
+    "jobTitle": "Aspiring Ethical Hacker",
+    "email": "mailto:aswinkumar1327@gmail.com",
+    "telephone": "+918870535530",
+    "sameAs": [
+      "https://www.linkedin.com/in/aswin-kumar-j",
+      "https://leetcode.com/u/aswin1327/"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "SNS College of Technology"
+    },
+    "knowsAbout": ["Cybersecurity", "Network Security", "Python", "Linux", "Kali Linux", "Bash", "Web Application Security", "OWASP Top 10", "Ethical Hacking"],
+    "image": "assets/aswin.jpg"
+  }
+  </script>
+</head>
+<body>
+  <!-- Accessibility: Skip Link -->
+  <a href="#hero" class="skip-link">Skip to main content</a>
+
+  <!-- CRT Scanlines Effect -->
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Glowing Reticle Cursor -->
+  <div class="cyber-cursor" id="cyber-cursor" aria-hidden="true"></div>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Background Interactive Canvas (Cyber Mesh / Matrix Rain) -->
+  <canvas id="cyber-canvas" aria-hidden="true"></canvas>
+
+  <!-- Boot-Up Terminal Preloader -->
+  <div id="boot-preloader" role="dialog" aria-modal="true" aria-label="System Initializing">
+    <div class="boot-terminal">
+      <div class="boot-header">
+        <div class="boot-dots">
+          <span class="boot-dot red"></span>
+          <span class="boot-dot yellow"></span>
+          <span class="boot-dot green"></span>
+        </div>
+        <span class="boot-title">sec-boot://v4.19.0-core</span>
+        <button id="boot-skip-btn" class="boot-skip-btn" title="Skip animation (ESC)">[SKIP BOOT]</button>
+      </div>
+      <div class="boot-body">
+        <div class="boot-logs" id="boot-logs"></div>
+        <div class="boot-progress-wrap">
+          <div class="boot-progress-bar">
+            <div class="boot-progress-fill" id="boot-progress-fill"></div>
+          </div>
+          <div class="boot-status">
+            <span>INITIALIZING ENCRYPTED INTERFACE</span>
+            <span id="boot-percent">0%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Easter Egg: Cyber God Mode Banner -->
+  <aside id="god-mode-banner" role="status" aria-live="polite">
+    <div class="god-mode-inner">
+      <span style="color:#00ff9c;">★ [KONAMI CODE UNLOCKED]</span>
+      <span>CYBER GOD MODE ACTIVATED // MATRIX OVERRIDE ENGAGED</span>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       1. Navigation Bar
+       ======================================================================== -->
+  <header>
+    <nav class="hud-navbar" id="hud-navbar" aria-label="Main Navigation">
+      <div class="nav-brand">
+        <a href="#hero" class="brand-logo" aria-label="Aswin Kumar Portfolio Home">
+          <span>AK</span><span class="cursor-blink">_</span>
+        </a>
+        <span class="brand-badge" title="Undergraduate Level 2">LVL.02</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#story" class="nav-link" style="color:var(--neon-green); font-weight:600;">// Journey</a>
+        <a href="#about" class="nav-link">// About</a>
+        <a href="#terminal" class="nav-link">// Terminal</a>
+        <a href="#skills" class="nav-link">// Skills</a>
+        <a href="#projects" class="nav-link">// Projects</a>
+        <a href="#experience" class="nav-link">// Experience</a>
+        <a href="#cyber-lab" class="nav-link">// Lab Log</a>
+        <a href="#writeups" class="nav-link">// Writeups</a>
+        <a href="#roadmap" class="nav-link">// Roadmap</a>
+        <a href="#contact" class="nav-link">// Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Dark / Light Theme Toggle -->
+        <button class="btn-theme-toggle" id="theme-toggle-btn" aria-label="Switch Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Resume Action -->
+        <button class="btn-resume" aria-label="View or Download Resume">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="btn-mobile-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation Menu">
+      <a href="#story" class="mobile-nav-link" style="color:var(--neon-green);">// 00. The Digital Journey (Story)</a>
+      <a href="#about" class="mobile-nav-link">// 01. About Me</a>
+      <a href="#terminal" class="mobile-nav-link">// 02. Interactive Terminal</a>
+      <a href="#skills" class="mobile-nav-link">// 03. Technical Arsenal</a>
+      <a href="#projects" class="mobile-nav-link">// 04. Featured Projects</a>
+      <a href="#experience" class="mobile-nav-link">// 05. Experience & Hackathons</a>
+      <a href="#cyber-lab" class="mobile-nav-link">// 06. Cyber Lab Log</a>
+      <a href="#writeups" class="mobile-nav-link">// 07. Security Write-ups</a>
+      <a href="#roadmap" class="mobile-nav-link">// 08. Career Roadmap</a>
+      <a href="#contact" class="mobile-nav-link">// 09. Contact Me</a>
+      <button class="btn-resume" style="width:100%; justify-content:center; margin-top:0.5rem;" aria-label="View or Download Resume">
+        <span>View Resume</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ========================================================================
+         2. Hero Section
+         ======================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Hero Info Content -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-pulse"></span>
+              <span>OPEN TO INTERNSHIPS & VIRTUAL SECURITY LABS | 2026</span>
+            </div>
+
+            <div class="hero-name-wrap">
+              <h1 class="hero-name">Aswin Kumar</h1>
+            </div>
+
+            <div class="hero-role-wrapper">
+              <span class="role-prefix">&gt;</span>
+              <span id="hero-typewriter-text">Ethical Hacker</span>
+              <span class="typewriter-cursor"></span>
+            </div>
+
+            <p class="hero-bio">
+              2nd year <strong>B.E. Computer Science and Design</strong> student at <strong>SNS College of Technology</strong>.
+              Passionate about exploring how digital systems work, uncovering security vulnerabilities, and building robust defense strategies.
+              Dedicated to continuous hands-on learning in networks, Linux, and web security.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#story" class="btn-primary" style="background:linear-gradient(135deg, #00ff9c, #00e5ff); color:#03060c; border:none; box-shadow:0 0 20px rgba(0,255,156,0.35);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span>Play Journey</span>
+              </a>
+
+              <a href="#projects" class="btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>Projects</span>
+              </a>
+
+              <a href="#terminal" class="btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+                <span>Run sec-cli</span>
+              </a>
+
+              <a href="#contact" class="btn-tertiary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="hero-socials">
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/aswin-kumar-j" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn Profile">
+                <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+
+              <!-- LeetCode -->
+              <a href="https://leetcode.com/u/aswin1327/" target="_blank" rel="noopener noreferrer" class="social-pill leetcode" title="LeetCode Profile">
+                <svg viewBox="0 0 24 24"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.874 5.874 0 0 0 .349 1.017 5.928 5.928 0 0 0 1.905 2.502l2.364 1.765a1.442 1.442 0 0 0 .866.291 1.393 1.393 0 0 0 .96-.402 1.408 1.408 0 0 0 .408-.98 1.38 1.38 0 0 0-.422-.968l-2.316-1.727a3.17 3.17 0 0 1-1.026-1.343 3.036 3.036 0 0 1-.034-1.272 3.082 3.082 0 0 1 .667-1.144L9.07 9.87l4.413-4.717a1.4 1.4 0 0 0 .42-.992 1.384 1.384 0 0 0-.42-.962 1.37 1.37 0 0 0-.961-.439l-.039.24zM16.5 7.5a1.5 1.5 0 0 0-1.5 1.5v1.2a1.5 1.5 0 0 0 1.5 1.5h4.2a1.5 1.5 0 0 0 1.5-1.5V9a1.5 1.5 0 0 0-1.5-1.5h-4.2zm-2.827 7.77a1.384 1.384 0 0 0-.978.414 1.397 1.397 0 0 0-.415.987 1.394 1.394 0 0 0 .415.983l3.22 3.22a5.418 5.418 0 0 0 2.222 1.392 5.762 5.762 0 0 0 2.457.258 5.674 5.674 0 0 0 2.378-.857 5.474 5.474 0 0 0 1.737-1.892 5.378 5.378 0 0 0 .61-2.43 5.418 5.418 0 0 0-.585-2.457 5.452 5.452 0 0 0-1.725-1.92l-4.52-3.417a1.4 1.4 0 0 0-.853-.294 1.39 1.39 0 0 0-.977.41 1.39 1.39 0 0 0-.414.981 1.4 1.4 0 0 0 .414.986l4.485 3.39c.5.38.878.89 1.096 1.474.218.583.23 1.22.036 1.812a3.078 3.078 0 0 1-.986 1.472 3.195 3.195 0 0 1-1.637.586 3.226 3.226 0 0 1-1.716-.408 3.173 3.173 0 0 1-1.258-1.205l-3.196-3.196a1.38 1.38 0 0 0-.986-.419z"/></svg>
+                <span>LeetCode</span>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub Profile">
+                <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+
+              <!-- TryHackMe -->
+              <a href="https://tryhackme.com" target="_blank" rel="noopener noreferrer" class="social-pill" title="TryHackMe Profile">
+                <svg viewBox="0 0 24 24"><path d="M10.825 0a3.63 3.63 0 00-2.57 1.063L1.06 8.257A3.63 3.63 0 000 10.825v2.35c0 1 .398 1.96 1.06 2.668l7.195 7.094A3.63 3.63 0 0010.825 24h2.35a3.63 3.63 0 002.57-1.063l7.195-7.094A3.63 3.63 0 0024 13.175v-2.35a3.63 3.63 0 00-1.06-2.668l-7.195-7.094A3.63 3.63 0 0013.175 0h-2.35zm.588 3.53h1.174a1.765 1.765 0 011.25.515l7.195 7.094c.33.328.515.77.515 1.25v1.174a1.765 1.765 0 01-.515 1.25l-7.195 7.094a1.765 1.765 0 01-1.25.515h-1.174a1.765 1.765 0 01-1.25-.515L3.582 14.81a1.765 1.765 0 01-.515-1.25v-1.174c0-.48.185-.922.515-1.25l7.195-7.094a1.765 1.765 0 011.25-.515z"/></svg>
+                <span>TryHackMe</span>
+              </a>
+
+              <!-- Hack The Box -->
+              <a href="https://hackthebox.com" target="_blank" rel="noopener noreferrer" class="social-pill" title="Hack The Box Profile">
+                <svg viewBox="0 0 24 24"><path d="M11.996 0a1.107 1.107 0 00-.554.148L1.874 5.679a1.11 1.11 0 00-.555.961v10.72a1.11 1.11 0 00.555.961l9.568 5.531c.17.099.362.148.554.148.192 0 .384-.049.554-.148l9.568-5.531a1.11 1.11 0 00.555-.961V6.64a1.11 1.11 0 00-.555-.961L12.55.148A1.107 1.107 0 0011.996 0zm0 2.222l8.28 4.786-3.218 1.86-5.062-2.927-5.062 2.927-3.218-1.86 8.28-4.786z"/></svg>
+                <span>HTB</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Visual: Cyber Framed Photo -->
+          <div class="hero-visual">
+            <div class="cyber-frame-wrapper" title="Aswin Kumar - Cybersec Student">
+              <div class="cyber-hud-ring" aria-hidden="true"></div>
+              <div class="cyber-frame-inner">
+                <!-- Laser Scanner -->
+                <div class="cyber-laser-scanner" aria-hidden="true"></div>
+
+                <!-- HUD Tech Accents -->
+                <div class="hud-corner tl" aria-hidden="true"></div>
+                <div class="hud-corner tr" aria-hidden="true"></div>
+                <div class="hud-corner bl" aria-hidden="true"></div>
+                <div class="hud-corner br" aria-hidden="true"></div>
+
+                <!-- Actual Photo -->
+                <img src="assets/aswin.jpg" alt="Aswin Kumar - Aspiring Ethical Hacker wearing formal black blazer and white shirt" class="cyber-avatar-img" width="320" height="380" fetchpriority="high">
+
+                <!-- HUD Status Badge -->
+                <div class="hud-status-badge">
+                  <span>SYS_ID: #AK-2026</span>
+                  <span style="color:var(--neon-cyan);">CLEARANCE: L2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CINEMATIC STORYTELLING SECTION: THE DIGITAL JOURNEY
+         Concept: "Think Like a Hacker, Protect Like a Professional"
+         ======================================================================== -->
+    <section class="story-section" id="story" aria-label="The Digital Journey - Ethical Hacking & Cybersecurity">
+      <div class="container">
+        <!-- Overhead HUD Telemetry Bar -->
+        <div class="story-hud-header">
+          <div class="story-hud-left">
+            <span class="story-hud-rec">
+              <span class="story-hud-rec-dot"></span>
+              <span>LIVE STORY REC</span>
+            </span>
+            <span style="color:var(--neon-green); font-weight:700;">// TRANSMISSION: #SEC-JOURNEY-2026</span>
+          </div>
+          <div class="story-hud-telemetry">
+            <div class="story-telemetry-item">
+              <span class="label">ENCRYPTION:</span>
+              <span class="value">AES-256-GCM</span>
+            </div>
+            <div class="story-telemetry-item">
+              <span class="label">CLEARANCE:</span>
+              <span class="value">DEFENSIVE ANALYST</span>
+            </div>
+            <div class="story-telemetry-item">
+              <span class="label">SYS_STATE:</span>
+              <span class="value" style="color:var(--neon-green);">MONITORED</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Scrubber Navigator (Desktop) -->
+        <nav class="story-scrubber" aria-label="Story Chapter Scrubber">
+          <button class="scrubber-dot active" data-target="#scene-1" title="Scene 1: The Digital World">01 // World</button>
+          <button class="scrubber-dot" data-target="#scene-2" title="Scene 2: The Curiosity">02 // Curiosity</button>
+          <button class="scrubber-dot" data-target="#scene-3" title="Scene 3: The Learning Journey">03 // Milestones</button>
+          <button class="scrubber-dot" data-target="#scene-4" title="Scene 4: Inside Hacker's Mind">04 // Inside Mind</button>
+          <button class="scrubber-dot" data-target="#scene-5" title="Scene 5: My Mission">05 // Mission</button>
+          <button class="scrubber-dot" data-target="#scene-6" title="Scene 6: The Next Chapter">06 // Next Chapter</button>
+        </nav>
+
+        <!-- Scene 1 – The Digital World -->
+        <article class="story-scene" id="scene-1" data-scene="1">
+          <span class="scene-watermark">01</span>
+          <div class="scene-world-grid">
+            <div class="digital-grid-floor" aria-hidden="true"></div>
+            <div class="binary-rain-layer" id="scene1-binary-rain" aria-hidden="true"></div>
+
+            <div class="scene-world-content">
+              <div class="scene-phase-tag">
+                <span>[SCENE 01 // ORIGIN MATRIX]</span>
+              </div>
+              <div class="scene-terminal-tag">&gt; sys_feed://global_telemetry.init()</div>
+              <h2 class="scene-world-headline">
+                <span id="scene1-type-text">IN A WORLD FULL OF DATA, SECURITY IS EVERYTHING.</span><span class="typing-cursor" aria-hidden="true"></span>
+              </h2>
+              <p class="scene-world-sub">
+                Every millisecond, billions of packets traverse our interconnected infrastructure. Where there is data, there are boundaries—and where there are boundaries, there is a duty to defend them.
+              </p>
+              <div class="scene-scroll-cue">
+                <span>Scroll Down To Enter The Journey</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Scene 2 – The Curiosity -->
+        <article class="story-scene" id="scene-2" data-scene="2">
+          <span class="scene-watermark">02</span>
+          <div class="scene-phase-tag">
+            <span>[SCENE 02 // THE AWAKENING]</span>
+          </div>
+          <div class="scene-curiosity-grid">
+            <div class="curiosity-text-col">
+              <div class="curiosity-intro-text">
+                &gt; MY CURIOSITY STARTED WITH ONE QUESTION...
+              </div>
+              <div class="curiosity-question-wrap">
+                <h3 class="curiosity-question glitch-text" data-text="HOW SECURE IS OUR DIGITAL WORLD?">
+                  HOW SECURE IS OUR DIGITAL WORLD?
+                </h3>
+              </div>
+              <p class="curiosity-desc">
+                When I looked at everyday applications, websites, and networked servers, I stopped seeing static software. I began to ask: What happens when an input is manipulated? What occurs behind closed network ports? Can an overlooked line of configuration compromise an entire enterprise?
+              </p>
+              <div style="font-family:var(--font-mono); font-size:0.85rem; color:var(--neon-green);">
+                ● INITIATING DEEP RECONNAISSANCE &amp; THREAT MODELING...
+              </div>
+            </div>
+
+            <!-- Animated Shield & Network Connections -->
+            <div class="curiosity-shield-visual" aria-hidden="true">
+              <svg class="curiosity-net-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Outer Pulse Rings -->
+                <circle cx="200" cy="200" r="160" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.3" class="shield-pulse-ring"/>
+                <circle cx="200" cy="200" r="130" stroke="#00ff9c" stroke-width="1" opacity="0.25"/>
+                
+                <!-- Circuit Connection Lines -->
+                <line x1="200" y1="40" x2="200" y2="120" stroke="#00e5ff" stroke-width="2" class="shield-circuit-line"/>
+                <line x1="200" y1="280" x2="200" y2="360" stroke="#00e5ff" stroke-width="2" class="shield-circuit-line"/>
+                <line x1="40" y1="200" x2="120" y2="200" stroke="#00ff9c" stroke-width="2" class="shield-circuit-line"/>
+                <line x1="280" y1="200" x2="360" y2="200" stroke="#00ff9c" stroke-width="2" class="shield-circuit-line"/>
+                <line x1="85" y1="85" x2="145" y2="145" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4,4"/>
+                <line x1="315" y1="85" x2="255" y2="145" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4,4"/>
+                <line x1="85" y1="315" x2="145" y2="255" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4,4"/>
+                <line x1="315" y1="315" x2="255" y2="255" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+                <!-- Network Perimeter Nodes -->
+                <circle cx="200" cy="40" r="6" class="shield-node"/>
+                <circle cx="200" cy="360" r="6" class="shield-node"/>
+                <circle cx="40" cy="200" r="6" class="shield-node"/>
+                <circle cx="360" cy="200" r="6" class="shield-node"/>
+                <circle cx="85" cy="85" r="5" fill="#00e5ff"/>
+                <circle cx="315" cy="85" r="5" fill="#00e5ff"/>
+                <circle cx="85" cy="315" r="5" fill="#00e5ff"/>
+                <circle cx="315" cy="315" r="5" fill="#00e5ff"/>
+
+                <!-- Center Glowing Cyber Shield -->
+                <path d="M200 120 L270 155 V235 C270 280 200 310 200 310 C200 310 130 280 130 235 V155 Z" 
+                      fill="rgba(0, 229, 255, 0.08)" stroke="#00e5ff" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M200 135 L255 165 V230 C255 268 200 295 200 295 C200 295 145 268 145 230 V165 Z" 
+                      fill="rgba(0, 255, 156, 0.12)" stroke="#00ff9c" stroke-width="2" stroke-linejoin="round"/>
+                
+                <!-- Inner Keyhole / Defensive Core -->
+                <circle cx="200" cy="205" r="14" fill="#00ff9c"/>
+                <path d="M194 205 L206 205 L209 235 L191 235 Z" fill="#00ff9c"/>
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <!-- Scene 3 – The Learning Journey -->
+        <article class="story-scene" id="scene-3" data-scene="3">
+          <span class="scene-watermark">03</span>
+          <div class="scene-phase-tag">
+            <span>[SCENE 03 // THE LEARNING JOURNEY]</span>
+          </div>
+          <div class="scene-journey-header">
+            <h3 class="scene-journey-title">FROM CURIOSITY TO MASTERY</h3>
+            <p style="color:var(--text-secondary); font-size:1.05rem;">
+              Transforming curiosity into rigorous discipline. Each discipline builds upon the next—from understanding the raw physics of packet transit to ethically analyzing systems as an adversary.
+            </p>
+          </div>
+
+          <!-- Sequential Timeline Milestones -->
+          <div class="milestones-conduit-grid">
+            <!-- Milestone 1: Computer Networking -->
+            <div class="milestone-item" style="--milestone-color:#00e5ff;">
+              <div class="milestone-top">
+                <span class="milestone-step-num">STAGE 01</span>
+                <span class="milestone-status-tag">[SYNCHRONIZED]</span>
+              </div>
+              <h4 class="milestone-name">
+                <span class="milestone-icon">🌐</span>
+                <span>Computer Networking</span>
+              </h4>
+              <p class="milestone-desc">
+                Demystifying the fundamental highways of the Internet: TCP/IP handshake architecture, OSI 7-layer stack, DNS resolution, and packet switching.
+              </p>
+              <div class="milestone-badges">
+                <span class="milestone-badge">TCP/IP</span>
+                <span class="milestone-badge">DNS</span>
+                <span class="milestone-badge">HTTP/HTTPS</span>
+                <span class="milestone-badge">OSI Model</span>
+              </div>
+            </div>
+
+            <!-- Milestone 2: Linux and Kali Linux -->
+            <div class="milestone-item" style="--milestone-color:#00ff9c;">
+              <div class="milestone-top">
+                <span class="milestone-step-num">STAGE 02</span>
+                <span class="milestone-status-tag">[HARDENED]</span>
+              </div>
+              <h4 class="milestone-name">
+                <span class="milestone-icon">🐧</span>
+                <span>Linux &amp; Kali Linux</span>
+              </h4>
+              <p class="milestone-desc">
+                Living within the POSIX terminal. File permissions, kernel boundaries, process hierarchy, and operating Kali Linux as an authorized security testbed.
+              </p>
+              <div class="milestone-badges">
+                <span class="milestone-badge">Linux Kernel</span>
+                <span class="milestone-badge">Kali Tools</span>
+                <span class="milestone-badge">File Permissions</span>
+                <span class="milestone-badge">Sysadmin</span>
+              </div>
+            </div>
+
+            <!-- Milestone 3: Python Programming -->
+            <div class="milestone-item" style="--milestone-color:#ffb703;">
+              <div class="milestone-top">
+                <span class="milestone-step-num">STAGE 03</span>
+                <span class="milestone-status-tag">[AUTOMATING]</span>
+              </div>
+              <h4 class="milestone-name">
+                <span class="milestone-icon">🐍</span>
+                <span>Python Programming</span>
+              </h4>
+              <p class="milestone-desc">
+                Crafting custom automation logic, network socket probes, banner grabbers, and scripting mathematical algorithms like Shannon entropy calculation.
+              </p>
+              <div class="milestone-badges">
+                <span class="milestone-badge">Sockets</span>
+                <span class="milestone-badge">Automation</span>
+                <span class="milestone-badge">Threading</span>
+                <span class="milestone-badge">CLI Utilities</span>
+              </div>
+            </div>
+
+            <!-- Milestone 4: Bash Commands -->
+            <div class="milestone-item" style="--milestone-color:#00e5ff;">
+              <div class="milestone-top">
+                <span class="milestone-step-num">STAGE 04</span>
+                <span class="milestone-status-tag">[PIPELINED]</span>
+              </div>
+              <h4 class="milestone-name">
+                <span class="milestone-icon">⚡</span>
+                <span>Bash Commands</span>
+              </h4>
+              <p class="milestone-desc">
+                Mastering the command line shell: grep, awk, sed, stdout/stderr redirection, chained pipes, and rapid system log analysis.
+              </p>
+              <div class="milestone-badges">
+                <span class="milestone-badge">Shell Pipelines</span>
+                <span class="milestone-badge">Grep &amp; Awk</span>
+                <span class="milestone-badge">Automation</span>
+                <span class="milestone-badge">Audit Logs</span>
+              </div>
+            </div>
+
+            <!-- Milestone 5: Cybersecurity Fundamentals -->
+            <div class="milestone-item" style="--milestone-color:#7c3aed;">
+              <div class="milestone-top">
+                <span class="milestone-step-num">STAGE 05</span>
+                <span class="milestone-status-tag">[FORTIFIED]</span>
+              </div>
+              <h4 class="milestone-name">
+                <span class="milestone-icon">🛡️</span>
+                <span>Cybersecurity Fundamentals</span>
+              </h4>
+              <p class="milestone-desc">
+                Deepening knowledge across the CIA triad (Confidentiality, Integrity, Availability), cryptography, threat surfaces, and OWASP Top 10 vulnerabilities.
+              </p>
+              <div class="milestone-badges">
+                <span class="milestone-badge">CIA Triad</span>
+                <span class="milestone-badge">OWASP Top 10</span>
+                <span class="milestone-badge">Cryptography</span>
+                <span class="milestone-badge">Defense in Depth</span>
+              </div>
+            </div>
+
+            <!-- Milestone 6: Ethical Hacking -->
+            <div class="milestone-item" style="--milestone-color:#00ff9c;">
+              <div class="milestone-top">
+                <span class="milestone-step-num">STAGE 06</span>
+                <span class="milestone-status-tag">[ACTIVE LABS]</span>
+              </div>
+              <h4 class="milestone-name">
+                <span class="milestone-icon">🎯</span>
+                <span>Ethical Hacking</span>
+              </h4>
+              <p class="milestone-desc">
+                Executing structured vulnerability assessments exclusively in sanctioned environments (TryHackMe, HTB, Docker enclaves) to discover weaknesses before attackers do.
+              </p>
+              <div class="milestone-badges">
+                <span class="milestone-badge">Reconnaissance</span>
+                <span class="milestone-badge">Port Scanning</span>
+                <span class="milestone-badge">Virtual Labs</span>
+                <span class="milestone-badge">100% Authorized</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Scene 4 – Inside the Hacker's Mind -->
+        <article class="story-scene" id="scene-4" data-scene="4">
+          <span class="scene-watermark">04</span>
+          <div class="scene-phase-tag">
+            <span>[SCENE 04 // THE DEFENDER'S PERSPECTIVE]</span>
+          </div>
+
+          <div class="scene-mind-wrap">
+            <!-- Futuristic Terminal Frame -->
+            <div class="mind-terminal-frame">
+              <div class="mind-term-header">
+                <div class="mind-term-dots">
+                  <span class="boot-dot red"></span>
+                  <span class="boot-dot yellow"></span>
+                  <span class="boot-dot green"></span>
+                </div>
+                <div class="mind-term-title">DEFENSIVE_RECON://ASWIN-LAB.SEC</div>
+                <div class="mind-term-badge">● VISUAL SIMULATION ONLY</div>
+              </div>
+              <div class="mind-term-console" id="mind-terminal-console" aria-live="polite">
+                <!-- Commands populated dynamically by story-engine.js -->
+              </div>
+            </div>
+
+            <!-- Statement Callout -->
+            <div class="mind-statement-box">
+              <h3 class="mind-statement-text">
+                "I DON'T JUST SEE SYSTEMS. I SEE HOW THEY CAN BE PROTECTED."
+              </h3>
+              <p class="mind-statement-sub">
+                // SEEING BEYOND THE SURFACE • ANTICIPATING ATTACK VECTORS • STRENGTHENING THE PERIMETER
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Scene 5 – My Mission -->
+        <article class="story-scene" id="scene-5" data-scene="5">
+          <span class="scene-watermark">05</span>
+          <div class="scene-phase-tag">
+            <span>[SCENE 05 // THE MISSION CREED]</span>
+          </div>
+
+          <div class="scene-mission-grid">
+            <!-- Radiant Glowing Digital Shield Hologram -->
+            <div class="mission-shield-stage" aria-hidden="true">
+              <svg class="digital-shield-hologram" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Rotating Hex Field -->
+                <polygon points="200,60 320,130 320,270 200,340 80,270 80,130" 
+                         stroke="#00ff9c" stroke-width="1.5" stroke-dasharray="8,6" opacity="0.4" class="shield-energy-hex"/>
+                <polygon points="200,80 300,140 300,260 200,320 100,260 100,140" 
+                         stroke="#00e5ff" stroke-width="1" opacity="0.25"/>
+
+                <!-- Main Aegis Defense Shield -->
+                <path d="M200 90 L290 135 V235 C290 295 200 335 200 335 C200 335 110 295 110 235 V135 Z" 
+                      fill="url(#shield-grad)" stroke="#00ff9c" stroke-width="3.5" stroke-linejoin="round"/>
+                
+                <!-- Inner Neon Shield Line -->
+                <path d="M200 115 L268 150 V225 C268 275 200 308 200 308 C200 308 132 275 132 225 V150 Z" 
+                      stroke="#00e5ff" stroke-width="2" stroke-dasharray="14,4"/>
+
+                <!-- Center High-Tech Security Lock -->
+                <g class="shield-lock-icon">
+                  <rect x="175" y="200" width="50" height="42" rx="6" fill="#00ff9c" opacity="0.9"/>
+                  <path d="M185 200 V182 C185 174 191 168 200 168 C209 168 215 174 215 182 V200" 
+                        stroke="#00e5ff" stroke-width="4.5" stroke-linecap="round"/>
+                  <circle cx="200" cy="216" r="4" fill="#03060c"/>
+                  <path d="M200 220 V229" stroke="#03060c" stroke-width="3" stroke-linecap="round"/>
+                </g>
+
+                <defs>
+                  <linearGradient id="shield-grad" x1="200" y1="90" x2="200" y2="335" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00ff9c" stop-opacity="0.2"/>
+                    <stop offset="0.6" stop-color="#00e5ff" stop-opacity="0.12"/>
+                    <stop offset="1" stop-color="#03060c" stop-opacity="0.8"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <!-- Mission Creed Content -->
+            <div class="mission-content-block">
+              <h3 class="mission-creed-headline">
+                <span class="line-attacker">THINK LIKE AN ATTACKER.</span>
+                <span class="line-defender">DEFEND LIKE A PROFESSIONAL.</span>
+              </h3>
+              <p class="mission-goal-paragraph">
+                "My goal is to become a skilled cybersecurity professional and contribute to building a safer digital world."
+              </p>
+              <div class="mission-badges-row">
+                <div class="mission-pill">
+                  <span class="mission-pill-dot"></span>
+                  <span>100% Authorized Practice</span>
+                </div>
+                <div class="mission-pill">
+                  <span class="mission-pill-dot" style="background:var(--neon-cyan); box-shadow:0 0 6px var(--neon-cyan);"></span>
+                  <span>Responsible Disclosure</span>
+                </div>
+                <div class="mission-pill">
+                  <span class="mission-pill-dot" style="background:#ffb703; box-shadow:0 0 6px #ffb703;"></span>
+                  <span>Defensive Resilience</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Scene 6 – The Next Chapter -->
+        <article class="story-scene" id="scene-6" data-scene="6">
+          <span class="scene-watermark">06</span>
+          <div class="scene-phase-tag">
+            <span>[SCENE 06 // CONTINUATION]</span>
+          </div>
+
+          <div class="scene-next-wrap">
+            <h3 class="next-chapter-headline">
+              THIS IS NOT THE END.<br/>THIS IS JUST THE BEGINNING.
+            </h3>
+            <p class="next-chapter-sub">
+              Every day presents new protocols to understand, new defensive barriers to architect, and new problem-solving frontiers to conquer. Explore my academic background, technical skills, write-ups, and live security prototypes.
+            </p>
+            <div class="next-cta-actions">
+              <a href="#about" class="btn-story-resume" id="story-resume-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+                <span>EXPLORE MY RESUME</span>
+              </a>
+              <a href="#terminal" class="btn-story-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+                <span>Run sec-cli Sandbox</span>
+              </a>
+              <a href="#skills" class="btn-story-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span>View Skills &amp; Arsenal</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. About Me Section
+         ======================================================================== -->
+    <section class="portfolio-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">01. PROFILE OVERVIEW</div>
+          <h2 class="section-title scramble-title" data-original-text="Behind the Terminal">Behind the Terminal</h2>
+          <p class="section-subtitle">Bridging engineering fundamentals, offensive exploration, and defensive systems design.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Biography & Education -->
+          <div class="about-card reveal-card">
+            <p class="about-bio-text">
+              Hello! I am <strong>Aswin Kumar</strong>, an engineering student driven by an insatiable curiosity about how computerized systems function under the hood—and more importantly, how they break and how to protect them.
+            </p>
+            <p class="about-bio-text">
+              My journey started with foundational software logic and quickly evolved into studying <strong>network protocols, security architectures, and system vulnerabilities</strong>. Rather than just writing software, I look at software through the lens of an adversary to identify misconfigurations and weak boundaries before malicious actors can exploit them.
+            </p>
+
+            <!-- Education Timeline -->
+            <div class="edu-timeline-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>Academic Foundation</span>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-degree">B.E. Computer Science and Design</div>
+              <div class="edu-college">SNS College of Technology, Coimbatore</div>
+              <div class="edu-meta">2nd Year Undergraduate (2024 — 2028) | Core Coursework: Networks, Data Structures, Operating Systems</div>
+            </div>
+
+            <!-- Cybersecurity Mission -->
+            <div class="mission-box">
+              <div class="mission-box-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="12 8 8 12 12 16 12 8"></polygon>
+                </svg>
+                <span>My Cybersecurity Mission</span>
+              </div>
+              <p>
+                "To rigorously master defensive and offensive security principles through continuous hands-on laboratory practice, responsible vulnerability discovery, and transparent ethics—building systems resilient enough to safeguard modern digital society."
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Ethics Pledge & Highlights -->
+          <div class="pledge-card reveal-card">
+            <div class="pledge-header">
+              <div class="pledge-badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="pledge-title">Code of Ethics & Pledge</h3>
+                <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">Strict adherence to RFC 2350 & Cyber Laws</span>
+              </div>
+            </div>
+
+            <div class="pledge-list">
+              <div class="pledge-item">
+                <span class="pledge-check">✓</span>
+                <div><strong>100% Authorized Practice:</strong> I test only systems and labs where I have documented, explicit permission.</div>
+              </div>
+              <div class="pledge-item">
+                <span class="pledge-check">✓</span>
+                <div><strong>Controlled Virtual Labs:</strong> Tools like Nmap, Wireshark, and Burp are practiced exclusively in local Docker containers, TryHackMe, and HTB.</div>
+              </div>
+              <div class="pledge-item">
+                <span class="pledge-check">✓</span>
+                <div><strong>Responsible Disclosure:</strong> Always alerting system maintainers privately to patch vulnerabilities before any public documentation.</div>
+              </div>
+              <div class="pledge-item">
+                <span class="pledge-check">✓</span>
+                <div><strong>Data Integrity & Privacy:</strong> Zero tolerance for data destruction, unauthorized exfiltration, or privacy violations.</div>
+              </div>
+            </div>
+
+            <div class="pledge-footer">
+              <span>SECURITY ETHICS SEAL</span>
+              <span style="color:var(--neon-green);">VERIFIED: PASS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. Interactive Simulated Terminal
+         ======================================================================== -->
+    <section class="portfolio-section" id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">02. SANDBOX TERMINAL</div>
+          <h2 class="section-title scramble-title" data-original-text="sec-cli v1.0.4">sec-cli v1.0.4</h2>
+          <p class="section-subtitle">Interact with my portfolio through a simulated command line. Type commands or click suggestion chips.</p>
+        </div>
+
+        <div class="terminal-wrapper" id="interactive-terminal">
+          <div class="term-topbar">
+            <div class="term-controls">
+              <span class="boot-dot red"></span>
+              <span class="boot-dot yellow"></span>
+              <span class="boot-dot green"></span>
+            </div>
+            <div class="term-title-text">aswin@sec-lab:~ (bash)</div>
+            <div class="term-status-pill">● SECURE SANDBOX</div>
+          </div>
+
+          <div class="term-output" role="log" aria-live="polite"></div>
+
+          <div class="term-chips">
+            <span class="term-chip-label">Quick Commands:</span>
+            <button class="term-chip" data-cmd="help">help</button>
+            <button class="term-chip" data-cmd="story" style="color:var(--neon-green); border-color:var(--border-neon);">▶ story</button>
+            <button class="term-chip" data-cmd="whoami">whoami</button>
+            <button class="term-chip" data-cmd="skills">skills</button>
+            <button class="term-chip" data-cmd="projects">projects</button>
+            <button class="term-chip" data-cmd="education">education</button>
+            <button class="term-chip" data-cmd="matrix">matrix</button>
+            <button class="term-chip" data-cmd="cat mission.txt">cat mission.txt</button>
+            <button class="term-chip" data-cmd="clear">clear</button>
+          </div>
+
+          <div class="term-input-bar">
+            <span class="term-prompt"><span class="term-green">guest@aswin-sec</span>:<span class="term-cyan">~</span>$</span>
+            <form class="term-form">
+              <input type="text" class="term-input" placeholder="Type command here (e.g., 'help', 'skills', 'projects')..." autocomplete="off" spellcheck="false" aria-label="Terminal Command Input">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. Technical Arsenal & Skills
+         ======================================================================== -->
+    <section class="portfolio-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">03. TECHNICAL ARSENAL</div>
+          <h2 class="section-title scramble-title" data-original-text="Skills & Honest Proficiencies">Skills & Honest Proficiencies</h2>
+          <p class="section-subtitle">Transparent ratings of what I know well, where I am building strength, and what I am actively exploring.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming & Command Line -->
+          <div class="skill-category-card reveal-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon green">&lt;/&gt;</div>
+              <h3 class="skill-cat-title">Programming &amp; CLI</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python Basics</span>
+                  <span class="skill-level-badge level-basic">Basic</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill fill-green" data-level="55"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Bash Basics</span>
+                  <span class="skill-level-badge level-basic">Basic</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill fill-green" data-level="50"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5 &amp; CSS3</span>
+                  <span class="skill-level-badge level-basic">Basic / Interm.</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill fill-green" data-level="60"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Operating Systems -->
+          <div class="skill-category-card reveal-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon cyan">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Operating Systems</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Linux &amp; Kali Linux</span>
+                  <span class="skill-level-badge level-strong">Hands-on</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill fill-cyan" data-level="65"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Command Line &amp; File Permissions</span>
+                  <span class="skill-level-badge level-strong">Hands-on</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill fill-cyan" data-level="60"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Virtual Environments (VM / Lab)</span>
+                  <span class="skill-level-badge level-basic">Basic</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill fill-cyan" data-level="55"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Networking Fundamentals -->
+          <div class="skill-category-card reveal-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon cyan">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Networking</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">TCP/IP &amp; OSI Model</span>
+                  <span class="skill-level-badge level-basic">Basic / Core</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill fill-cyan" data-level="60"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">DNS, HTTP &amp; Subnetting</span>
+                  <span class="skill-level-badge level-basic">Basic</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill fill-cyan" data-level="55"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Packet Flow Inspection</span>
+                  <span class="skill-level-badge level-basic">Basic</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill fill-cyan" data-level="50"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cybersecurity & Defense -->
+          <div class="skill-category-card reveal-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon green">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Cybersecurity</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Security Fundamentals</span>
+                  <span class="skill-level-badge level-strong">Core</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill fill-green" data-level="65"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Ethical Hacking (Authorized)</span>
+                  <span class="skill-level-badge level-strong">Active Labs</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill fill-green" data-level="60"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">OWASP Top 10 Web Risks</span>
+                  <span class="skill-level-badge level-basic">Foundational</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill fill-green" data-level="55"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-category-card reveal-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon yellow">★</div>
+              <h3 class="skill-cat-title">Soft Skills</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Problem-solving</span>
+                  <span class="skill-level-badge level-strong">Strong</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill fill-purple" data-level="88"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Critical Thinking</span>
+                  <span class="skill-level-badge level-strong">Strong</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill fill-purple" data-level="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Hackathon Persistence</span>
+                  <span class="skill-level-badge level-strong">Strong</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill fill-purple" data-level="82"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages Proficiency: Horizontal Bar Chart -->
+        <div class="languages-card reveal-card">
+          <div class="languages-header">
+            <div class="languages-title">
+              <span style="color:var(--neon-cyan);">🗣️</span>
+              <span>Languages Proficiency</span>
+            </div>
+            <span class="languages-badge">HORIZONTAL BAR CHART</span>
+          </div>
+          <div class="languages-bars-list">
+            <!-- Tamil 100% -->
+            <div class="lang-bar-row">
+              <div class="lang-bar-meta">
+                <span class="lang-bar-name">
+                  <span>Tamil</span>
+                  <span style="font-size:0.75rem; color:var(--text-muted);">(Native / Full Proficiency)</span>
+                </span>
+                <span class="lang-bar-percent" style="color:var(--neon-green);">100%</span>
+              </div>
+              <div class="lang-bar-track">
+                <div class="lang-bar-fill fill-green" data-level="100"></div>
+              </div>
+            </div>
+
+            <!-- English 70% -->
+            <div class="lang-bar-row">
+              <div class="lang-bar-meta">
+                <span class="lang-bar-name">
+                  <span>English</span>
+                  <span style="font-size:0.75rem; color:var(--text-muted);">(Professional Working)</span>
+                </span>
+                <span class="lang-bar-percent" style="color:var(--neon-cyan);">70%</span>
+              </div>
+              <div class="lang-bar-track">
+                <div class="lang-bar-fill fill-cyan" data-level="70"></div>
+              </div>
+            </div>
+
+            <!-- Telugu 70% -->
+            <div class="lang-bar-row">
+              <div class="lang-bar-meta">
+                <span class="lang-bar-name">
+                  <span>Telugu</span>
+                  <span style="font-size:0.75rem; color:var(--text-muted);">(Conversational / Working)</span>
+                </span>
+                <span class="lang-bar-percent" style="color:var(--neon-cyan);">70%</span>
+              </div>
+              <div class="lang-bar-track">
+                <div class="lang-bar-fill fill-cyan" data-level="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Strengths & Areas of Growth -->
+        <div class="strengths-growth-grid">
+          <!-- Strengths Card -->
+          <div class="strengths-card reveal-card">
+            <div class="sg-card-header">
+              <div class="sg-card-icon green">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="sg-card-title">Strengths</h3>
+                <div class="sg-card-subtitle">// CORE ATTRIBUTES &amp; MINDSET</div>
+              </div>
+            </div>
+            <div class="sg-items-list">
+              <div class="sg-list-item">
+                <span class="sg-bullet green">✓</span>
+                <span><strong>Analytical and logical thinking</strong> — Methodical approach to decomposing complex system architectures and data flows.</span>
+              </div>
+              <div class="sg-list-item">
+                <span class="sg-bullet green">✓</span>
+                <span><strong>Quick learning and adaptability</strong> — Rapidly acquiring and applying modern tools, concepts, and security frameworks.</span>
+              </div>
+              <div class="sg-list-item">
+                <span class="sg-bullet green">✓</span>
+                <span><strong>Problem-solving mindset</strong> — Tenacious persistence in tracing unexpected errors, bugs, and edge cases.</span>
+              </div>
+              <div class="sg-list-item">
+                <span class="sg-bullet green">✓</span>
+                <span><strong>Self-motivation and consistency</strong> — Dedicated daily practice in virtual CTF labs and academic coursework.</span>
+              </div>
+              <div class="sg-list-item">
+                <span class="sg-bullet green">✓</span>
+                <span><strong>Attention to detail</strong> — Thorough scrutiny of packet headers, permissions, configurations, and syntax.</span>
+              </div>
+              <div class="sg-list-item">
+                <span class="sg-bullet green">✓</span>
+                <span><strong>Curiosity about cybersecurity and emerging technologies</strong> — Genuine passion for staying informed on evolving threat vectors and defensive innovations.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Areas of Growth Card -->
+          <div class="growth-card reveal-card">
+            <div class="sg-card-header">
+              <div class="sg-card-icon cyan">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="sg-card-title">Areas of Growth</h3>
+                <div class="sg-card-subtitle">// ACTIVE DEVELOPMENT ROADMAP</div>
+              </div>
+            </div>
+            <div class="sg-items-list">
+              <div class="sg-list-item">
+                <span class="sg-bullet cyan">▲</span>
+                <span><strong>Continuously developing practical cybersecurity experience</strong> through hands-on projects, simulated breaches, and CTF challenges.</span>
+              </div>
+              <div class="sg-list-item">
+                <span class="sg-bullet cyan">▲</span>
+                <span><strong>Working on improving time management and task prioritization</strong> to balance deep-dive technical explorations with sprint deadlines.</span>
+              </div>
+              <div class="sg-list-item">
+                <span class="sg-bullet cyan">▲</span>
+                <span><strong>Developing confidence in technical communication and public speaking</strong> by presenting project demos and articulating security findings clearly.</span>
+              </div>
+              <div class="sg-list-item">
+                <span class="sg-bullet cyan">▲</span>
+                <span><strong>Learning to balance detailed analysis with faster decision-making</strong> in fast-paced hackathons and emergency incident scenarios.</span>
+              </div>
+              <div class="sg-list-item">
+                <span class="sg-bullet cyan">▲</span>
+                <span><strong>Expanding knowledge of industry-standard security tools and technologies</strong> including SIEMs, advanced EDR concepts, and cloud security architectures.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Currently Learning Roadmap Box -->
+        <div class="learning-roadmap-card reveal-card">
+          <div class="learning-roadmap-header">
+            <div>
+              <h3 style="font-size:1.15rem; color:var(--text-primary); margin-bottom:0.25rem;">
+                <span style="color:var(--neon-purple);">●</span> Currently Learning & Hands-on Tools
+              </h3>
+              <p style="font-size:0.875rem; color:var(--text-secondary);">
+                Actively practicing in virtual labs, virtualized Linux environments, and TryHackMe.
+              </p>
+            </div>
+            <span class="badge-mini" style="background:var(--neon-purple-dim); color:var(--neon-purple); border-color:var(--neon-purple);">LIVE FOCUS</span>
+          </div>
+
+          <div class="learning-tags-grid">
+            <span class="learning-tag">🐧 Linux (Ubuntu / Kali CLI & Permissions)</span>
+            <span class="learning-tag">🔍 Nmap (Reconnaissance & Service Detection)</span>
+            <span class="learning-tag">📡 Wireshark (Packet Capture & Protocol Inspection)</span>
+            <span class="learning-tag">⚡ Burp Suite (HTTP Proxy & Repeater Basics)</span>
+            <span class="learning-tag">🛡️ OWASP Top 10 Security Vulnerabilities</span>
+            <span class="learning-tag">🌐 Web Application Security Concepts</span>
+            <span class="learning-tag">🎯 Metasploit Framework (Lab Architecture)</span>
+            <span class="learning-tag">🏆 TryHackMe & Hack The Box Fundamentals</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. Featured Projects
+         ======================================================================== -->
+    <section class="portfolio-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">04. PORTFOLIO WORK</div>
+          <h2 class="section-title scramble-title" data-original-text="Featured Projects & Labs">Featured Projects & Labs</h2>
+          <p class="section-subtitle">Real-world web development, hackathon teamwork, and hands-on cybersecurity research prototypes.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects (6)</button>
+          <button class="filter-btn" data-filter="featured">Featured</button>
+          <button class="filter-btn" data-filter="college">College & Hackathons</button>
+          <button class="filter-btn" data-filter="security-lab">Security Tools (In Progress)</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: AI Online Interview Platform -->
+          <article class="project-card reveal-card" data-category="college" data-featured="true">
+            <div>
+              <div class="project-top">
+                <span class="project-badge badge-mini">College Mini Project</span>
+                <span class="project-status">Completed & Deployed</span>
+              </div>
+              <h3 class="project-title">AI Online Interview Platform</h3>
+              <p class="project-desc">
+                A web-based recruitment assessment platform engineered for companies to administer multi-round candidate interviews online with structured evaluation metrics.
+              </p>
+
+              <!-- Problem - Approach - Result -->
+              <div class="par-box">
+                <div class="par-row">
+                  <span class="par-label">Problem:</span>
+                  <span class="par-text">Manual campus recruitment rounds suffered from scheduling bottlenecks and fragmented candidate feedback.</span>
+                </div>
+                <div class="par-row">
+                  <span class="par-label">Approach:</span>
+                  <span class="par-text">Engineered a multi-stage web application allowing recruiters to define test rounds, review live submissions, and log scores.</span>
+                </div>
+                <div class="par-row">
+                  <span class="par-label">Result:</span>
+                  <span class="par-text">Demonstrated successfully to academic faculty and peers, streamlining student evaluations for mock company hiring.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Web APIs</span>
+                <span class="tech-tag">UX Design</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>Source Code</span>
+              </a>
+              <a href="#projects" class="project-btn" style="color:var(--neon-green);" onclick="alert('College Mini Project Prototype documentation available on request!')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Live Demo</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Hackathon Innovation Sprint -->
+          <article class="project-card reveal-card" data-category="college" data-featured="true">
+            <div>
+              <div class="project-top">
+                <span class="project-badge badge-hackathon">Hackathon Project</span>
+                <span class="project-status">Sprint Demo</span>
+              </div>
+              <h3 class="project-title">[PLACEHOLDER: Hackathon Innovation Challenge]</h3>
+              <p class="project-desc">
+                Intensive 24-hour sprint prototype tackling technical automation and security workflow challenges. Built with a high-velocity student engineering squad.
+              </p>
+
+              <div class="par-box">
+                <div class="par-row">
+                  <span class="par-label">Problem:</span>
+                  <span class="par-text">[PLACEHOLDER: Specific real-world problem tackled during the hackathon challenge].</span>
+                </div>
+                <div class="par-row">
+                  <span class="par-label">Approach:</span>
+                  <span class="par-text">[PLACEHOLDER: Rapid architecture design, division of backend/frontend roles, agile commits].</span>
+                </div>
+                <div class="par-row">
+                  <span class="par-label">Result:</span>
+                  <span class="par-text">[PLACEHOLDER: Final jury presentation, working prototype demonstration, jury recognition].</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Rapid Prototyping</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Hackathon Sprint</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn">
+                <span>[GitHub Repo]</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Python Multi-Threaded Port Scanner (In Progress) -->
+          <article class="project-card reveal-card" data-category="security-lab">
+            <div>
+              <div class="project-top">
+                <span class="project-badge badge-lab">In Progress - Security Lab</span>
+                <span class="project-status">Active Research</span>
+              </div>
+              <h3 class="project-title">Python Multi-Threaded Port Scanner</h3>
+              <p class="project-desc">
+                A custom socket-based port enumeration utility designed to understand TCP handshakes, socket timeouts, and concurrency patterns in network reconnaissance.
+              </p>
+
+              <div class="par-box">
+                <div class="par-row">
+                  <span class="par-label">Problem:</span>
+                  <span class="par-text">Sequential port probes are slow and do not illuminate how socket threads manage asynchronous connection requests.</span>
+                </div>
+                <div class="par-row">
+                  <span class="par-label">Approach:</span>
+                  <span class="par-text">Utilizing Python's <code>socket</code> and <code>threading</code> modules with customizable IP ranges and banner grabbing.</span>
+                </div>
+                <div class="par-row">
+                  <span class="par-label">Result:</span>
+                  <span class="par-text">Functional CLI script currently capable of scanning standard top 100 ports on authorized lab targets under 3 seconds.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python 3</span>
+                <span class="tech-tag">Sockets</span>
+                <span class="tech-tag">Threading</span>
+                <span class="tech-tag">Network Recon</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--neon-yellow);">
+                ⚡ Educational Lab Script (Internal)
+              </span>
+            </div>
+          </article>
+
+          <!-- Project 4: Password Strength & Entropy Analyzer (In Progress) -->
+          <article class="project-card reveal-card" data-category="security-lab">
+            <div>
+              <div class="project-top">
+                <span class="project-badge badge-lab">In Progress - Security Lab</span>
+                <span class="project-status">Development</span>
+              </div>
+              <h3 class="project-title">Password Strength & Entropy Analyzer</h3>
+              <p class="project-desc">
+                An analytical utility that computes Shannon entropy, identifies common dictionary patterns (e.g. keyboard walks, leetspeak), and recommends defensive policies.
+              </p>
+
+              <div class="par-box">
+                <div class="par-row">
+                  <span class="par-label">Problem:</span>
+                  <span class="par-text">Users believe simple character substitutions (e.g., 'P@ssword1') resist brute force and dictionary masks.</span>
+                </div>
+                <div class="par-row">
+                  <span class="par-label">Approach:</span>
+                  <span class="par-text">Mathematical entropy calculation (bits of randomness) combined with pattern detection against top 10k breach words.</span>
+                </div>
+                <div class="par-row">
+                  <span class="par-label">Result:</span>
+                  <span class="par-text">Generates clear visual scorecards and estimation of cracking time against GPU clusters.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Information Theory</span>
+                <span class="tech-tag">Entropy</span>
+                <span class="tech-tag">Authentication</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--neon-yellow);">
+                ⚡ Active Lab Tool (In Progress)
+              </span>
+            </div>
+          </article>
+
+          <!-- Project 5: Network Packet Analyzer Lab (In Progress) -->
+          <article class="project-card reveal-card" data-category="security-lab">
+            <div>
+              <div class="project-top">
+                <span class="project-badge badge-lab">In Progress - Security Lab</span>
+                <span class="project-status">Laboratory Study</span>
+              </div>
+              <h3 class="project-title">Simple Network Packet Analyzer Lab</h3>
+              <p class="project-desc">
+                Educational packet sniffer examining raw Ethernet frames, IP headers, and TCP/UDP flags to gain deep insight into OSI Layer 3 and Layer 4 communications.
+              </p>
+
+              <div class="par-box">
+                <div class="par-row">
+                  <span class="par-label">Problem:</span>
+                  <span class="par-text">Abstract textbook diagrams of packet headers do not communicate real-world bit offsets and protocol anomalies.</span>
+                </div>
+                <div class="par-row">
+                  <span class="par-label">Approach:</span>
+                  <span class="par-text">Decoding raw socket buffers into human-readable data structures alongside Wireshark PCAP verification.</span>
+                </div>
+                <div class="par-row">
+                  <span class="par-label">Result:</span>
+                  <span class="par-text">Deepened comprehension of TCP flags (SYN, ACK, FIN, RST) and TTL-based route analysis.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Networking</span>
+                <span class="tech-tag">Wireshark</span>
+                <span class="tech-tag">Raw Sockets</span>
+                <span class="tech-tag">TCP/IP</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--neon-cyan);">
+                🔬 Lab Analysis Project
+              </span>
+            </div>
+          </article>
+
+          <!-- Project 6: Phishing Awareness Demo (Educational Only) -->
+          <article class="project-card reveal-card" data-category="security-lab">
+            <div>
+              <div class="project-top">
+                <span class="project-badge badge-lab">Educational Only</span>
+                <span class="project-status">Interactive Demo</span>
+              </div>
+              <h3 class="project-title">Phishing Awareness Simulator</h3>
+              <p class="project-desc">
+                A strictly benign, educational interactive mockup illustrating common social engineering visual deceptions, homograph domain attacks, and email spoofing markers.
+              </p>
+
+              <div class="par-box">
+                <div class="par-row">
+                  <span class="par-label">Problem:</span>
+                  <span class="par-text">Employees and students frequently fall victim to deceptive credential harvesting interfaces.</span>
+                </div>
+                <div class="par-row">
+                  <span class="par-label">Approach:</span>
+                  <span class="par-text">Side-by-side interactive quiz highlighting telltale indicators: mismatched SSL certificates, punycode, and urgent wording.</span>
+                </div>
+                <div class="par-row">
+                  <span class="par-label">Result:</span>
+                  <span class="par-text">Educated peers on spotting fake login pages with zero risk or credential logging.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Security Awareness</span>
+                <span class="tech-tag">Web Security</span>
+                <span class="tech-tag">Defense Education</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--neon-green);">
+                🛡️ Strictly Non-Exploitative Demo
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. Hackathons & Experience
+         ======================================================================== -->
+    <section class="portfolio-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">05. MILESTONES & ACTIVITIES</div>
+          <h2 class="section-title scramble-title" data-original-text="Hackathons & Experience">Hackathons & Experience</h2>
+          <p class="section-subtitle">A chronological record of hands-on team hackathons, academic showcases, and collaborative projects.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-spine"></div>
+
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item reveal-card">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2025 / 2026 [PLACEHOLDER: EXACT MONTH]</div>
+              <div class="timeline-role">[PLACEHOLDER: Hackathon Event Name] Participant</div>
+              <div class="timeline-org">Host / Venue: [PLACEHOLDER: Institution / Organization Name]</div>
+              <p class="timeline-desc">
+                Participated in a multi-hour competitive team hackathon. Collaborated with peers to design, build, and present a functional prototype addressing modern automation challenges. Strengthened rapid debugging, API integration, and pitching abilities under strict deadline constraints.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item reveal-card">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2025 — PRESENT</div>
+              <div class="timeline-role">Lead Developer — AI Online Interview Platform</div>
+              <div class="timeline-org">SNS College of Technology (Academic Mini Project)</div>
+              <p class="timeline-desc">
+                Architected and developed the front-end interface and submission workflows for an online recruitment web platform. Designed multi-round interview pipelines and delivered a functioning prototype showcased to faculty evaluators.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item reveal-card">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2024 — PRESENT</div>
+              <div class="timeline-role">Active Cyber Student & Community Contributor</div>
+              <div class="timeline-org">College Tech Clubs & Online Virtual Labs</div>
+              <p class="timeline-desc">
+                Continuously solving foundational CTF rooms and security challenges on TryHackMe and OverTheWire Bandit. Sharing knowledge on Linux system administration, basic network hygiene, and defensive web practices with fellow students.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         8. Cyber Lab & Learning Log
+         ======================================================================== -->
+    <section class="portfolio-section" id="cyber-lab">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">06. HANDS-ON PRACTICE</div>
+          <h2 class="section-title scramble-title" data-original-text="Cyber Lab & Practice Stats">Cyber Lab & Practice Stats</h2>
+          <p class="section-subtitle">Honest metrics reflecting ongoing practice on virtual security platforms and CTFs.</p>
+        </div>
+
+        <div class="stats-grid">
+          <!-- Stat 1 -->
+          <div class="stat-card reveal-card">
+            <div class="stat-icon">🛡️</div>
+            <div class="stat-number stat-counter" data-target="25" data-suffix="+">0</div>
+            <div class="stat-label">TryHackMe Rooms</div>
+            <div class="stat-subtext">[PLACEHOLDER: Update with exact room count]</div>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-card reveal-card">
+            <div class="stat-icon">⚡</div>
+            <div class="stat-number stat-counter" data-target="15" data-suffix="%">0</div>
+            <div class="stat-label">THM Global Rank</div>
+            <div class="stat-subtext">[PLACEHOLDER: Target Top 10% milestone]</div>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-card reveal-card">
+            <div class="stat-icon">💻</div>
+            <div class="stat-number stat-counter" data-target="6" data-suffix="+">0</div>
+            <div class="stat-label">Security & Web Projects</div>
+            <div class="stat-subtext">College Mini Project + Lab Utilities</div>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stat-card reveal-card">
+            <div class="stat-icon">🏆</div>
+            <div class="stat-number stat-counter" data-target="3" data-suffix="">0</div>
+            <div class="stat-label">Hackathons Attended</div>
+            <div class="stat-subtext">[PLACEHOLDER: Exact event count]</div>
+          </div>
+        </div>
+
+        <!-- Learning Focus Callout -->
+        <div style="background:var(--bg-card); border:1px solid var(--border-cyan); border-radius:var(--radius-md); padding:1.5rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <h4 style="color:var(--neon-cyan); margin-bottom:0.25rem;">Current Lab Focus: Web Security Fundamentals & Linux</h4>
+            <p style="font-size:0.9rem; color:var(--text-secondary);">Currently completing rooms on: OWASP Top 10, Nmap Service Discovery, Burp Suite Basics, and Bandit Linux CLI.</p>
+          </div>
+          <a href="https://tryhackme.com" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="font-size:0.8rem; padding:0.5rem 1rem;">
+            <span>Verify on TryHackMe</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         9. Security Write-ups / Blog
+         ======================================================================== -->
+    <section class="portfolio-section" id="writeups">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">07. TECHNICAL NOTES</div>
+          <h2 class="section-title scramble-title" data-original-text="Security Write-ups & Notes">Security Write-ups & Notes</h2>
+          <p class="section-subtitle">Deepening my comprehension by breaking down security mechanisms into clean, educational guides.</p>
+        </div>
+
+        <div class="writeups-grid">
+          <!-- Article 1 -->
+          <article class="writeup-card reveal-card">
+            <div>
+              <div class="writeup-meta">
+                <span class="writeup-category">Web Security</span>
+                <span class="writeup-readtime">5 min read</span>
+              </div>
+              <h3 class="writeup-title">Deconstructing SQL Injection: From Query Flaws to Prepared Statements</h3>
+              <p class="writeup-summary">
+                A practical exploration of SQL injection vulnerabilities, why string concatenation fails, and how parameterized statements eliminate query alteration.
+              </p>
+            </div>
+            <button class="writeup-action-btn" data-writeup="sql_injection">
+              <span>Read Full Breakdown</span>
+              <span>→</span>
+            </button>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="writeup-card reveal-card">
+            <div>
+              <div class="writeup-meta">
+                <span class="writeup-category">Network Recon</span>
+                <span class="writeup-readtime">6 min read</span>
+              </div>
+              <h3 class="writeup-title">Nmap Essentials: Port Scanning Techniques & Host Discovery</h3>
+              <p class="writeup-summary">
+                Understanding TCP SYN vs Connect scans, service version detection flags, and running safe NSE scripts in virtual network labs.
+              </p>
+            </div>
+            <button class="writeup-action-btn" data-writeup="nmap_basics">
+              <span>Read Full Breakdown</span>
+              <span>→</span>
+            </button>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="writeup-card reveal-card">
+            <div>
+              <div class="writeup-meta">
+                <span class="writeup-category">OWASP Risk</span>
+                <span class="writeup-readtime">4 min read</span>
+              </div>
+              <h3 class="writeup-title">OWASP Top 10 Explained: Broken Access Control & Prevention</h3>
+              <p class="writeup-summary">
+                Why broken access control is currently the #1 web risk, how IDOR vulnerabilities occur, and enforcing server-side authorization boundaries.
+              </p>
+            </div>
+            <button class="writeup-action-btn" data-writeup="owasp_top10">
+              <span>Read Full Breakdown</span>
+              <span>→</span>
+            </button>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="writeup-card reveal-card">
+            <div>
+              <div class="writeup-meta">
+                <span class="writeup-category">System Defense</span>
+                <span class="writeup-readtime">7 min read</span>
+              </div>
+              <h3 class="writeup-title">Linux Server Hardening: Essential Steps for Securing Debian/Ubuntu</h3>
+              <p class="writeup-summary">
+                A checklist of practical hardening measures: key-only SSH authentication, default-deny UFW firewalls, fail2ban monitoring, and unprivileged user management.
+              </p>
+            </div>
+            <button class="writeup-action-btn" data-writeup="linux_hardening">
+              <span>Read Full Breakdown</span>
+              <span>→</span>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         10. Certifications & Goals
+         ======================================================================== -->
+    <section class="portfolio-section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">08. CREDENTIALS & GOALS</div>
+          <h2 class="section-title scramble-title" data-original-text="Certifications & Learning Goals">Certifications & Learning Goals</h2>
+          <p class="section-subtitle">Explicitly distinguishing completed foundations from active targets. Integrity first.</p>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1: Completed -->
+          <div class="cert-card completed reveal-card">
+            <div>
+              <span class="cert-status-badge status-completed">COMPLETED FOUNDATION</span>
+              <h3 class="cert-name">Computer Networks Coursework & Labs</h3>
+              <div class="cert-issuer">SNS College of Technology / Academic Curriculum</div>
+              <p class="cert-notes">Comprehensive coverage of network architecture, subnetting, TCP/IP, and OSI layering.</p>
+            </div>
+            <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--neon-green); margin-top:1rem;">
+              Status: Verified Academic Milestone
+            </div>
+          </div>
+
+          <!-- Cert 2: In Progress -->
+          <div class="cert-card in-progress reveal-card">
+            <div>
+              <span class="cert-status-badge status-in-progress">ACTIVELY IN PROGRESS</span>
+              <h3 class="cert-name">Google Cybersecurity Professional Certificate</h3>
+              <div class="cert-issuer">Coursera / Google Career Certificates</div>
+              <p class="cert-notes">Foundational training in security models, network telemetry, SIEM concepts, and Linux/SQL automation.</p>
+            </div>
+            <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--neon-yellow); margin-top:1rem;">
+              Status: In Progress [Expected 2026]
+            </div>
+          </div>
+
+          <!-- Cert 3: Planned Target -->
+          <div class="cert-card planned reveal-card">
+            <div>
+              <span class="cert-status-badge status-planned">PLANNED TARGET (2026)</span>
+              <h3 class="cert-name">CompTIA Security+</h3>
+              <div class="cert-issuer">CompTIA (Target Goal)</div>
+              <p class="cert-notes">Global benchmark for core security functions, threats, cryptography, and enterprise risk management.</p>
+            </div>
+            <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--neon-cyan); margin-top:1rem;">
+              Status: Planned Study Objective
+            </div>
+          </div>
+
+          <!-- Cert 4: Planned Target -->
+          <div class="cert-card planned reveal-card">
+            <div>
+              <span class="cert-status-badge status-planned">PLANNED TARGET (2027)</span>
+              <h3 class="cert-name">eJPT (Junior Penetration Tester)</h3>
+              <div class="cert-issuer">INE Security (Hands-on Target)</div>
+              <p class="cert-notes">Practical, hands-on certification assessing real-world vulnerability assessment and penetration testing methodology.</p>
+            </div>
+            <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--neon-cyan); margin-top:1rem;">
+              Status: Practical Goal Prior to Graduation
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         11. Career Roadmap
+         ======================================================================== -->
+    <section class="portfolio-section" id="roadmap">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">09. CAREER PROGRESSION</div>
+          <h2 class="section-title scramble-title" data-original-text="Ethical Hacking Career Roadmap">Ethical Hacking Career Roadmap</h2>
+          <p class="section-subtitle">My structured pipeline from undergraduate computer science foundations to professional ethical hacker.</p>
+        </div>
+
+        <div class="roadmap-tree">
+          <!-- Step 1 -->
+          <div class="roadmap-step reveal-card">
+            <div class="roadmap-num">01</div>
+            <div class="roadmap-content">
+              <span class="roadmap-phase-tag" style="color:var(--neon-green);">CURRENT FOUNDATION</span>
+              <h3 class="roadmap-phase-title">Computer Science & Programming Fundamentals</h3>
+              <p class="roadmap-phase-desc">Data structures, logic building, basic Python scripting, HTML/CSS/JS web architecture, and algorithmic problem solving.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="roadmap-step reveal-card">
+            <div class="roadmap-num">02</div>
+            <div class="roadmap-content">
+              <span class="roadmap-phase-tag" style="color:var(--neon-green);">CURRENT CORE</span>
+              <h3 class="roadmap-phase-title">Linux Administration & Networking Deep Dive</h3>
+              <p class="roadmap-phase-desc">Mastering Linux terminal commands, file permissions, TCP/IP handshake mechanisms, Wireshark packet capture, and subnet routing.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="roadmap-step reveal-card">
+            <div class="roadmap-num">03</div>
+            <div class="roadmap-content">
+              <span class="roadmap-phase-tag" style="color:var(--neon-yellow);">ACTIVE FOCUS</span>
+              <h3 class="roadmap-phase-title">Web Application Security & OWASP Top 10</h3>
+              <p class="roadmap-phase-desc">Practicing vulnerability assessment using Burp Suite proxy, testing for SQLi, XSS, and broken access control in controlled virtual labs.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="roadmap-step reveal-card">
+            <div class="roadmap-num">04</div>
+            <div class="roadmap-content">
+              <span class="roadmap-phase-tag" style="color:var(--neon-cyan);">UPCOMING PHASE</span>
+              <h3 class="roadmap-phase-title">Penetration Testing Tools & Methodologies</h3>
+              <p class="roadmap-phase-desc">Proficiency in Nmap network mapping, Metasploit payload mechanics, reconnaissance frameworks, and privilege escalation vectors.</p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="roadmap-step reveal-card">
+            <div class="roadmap-num">05</div>
+            <div class="roadmap-content">
+              <span class="roadmap-phase-tag" style="color:var(--neon-purple);">TARGET MILESTONE</span>
+              <h3 class="roadmap-phase-title">CTFs, Bug Bounty & Practical Certifications</h3>
+              <p class="roadmap-phase-desc">Advancing on TryHackMe/Hack The Box rankings, participating in collegiate CTFs, securing the eJPT and CompTIA Security+ certifications.</p>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="roadmap-step reveal-card">
+            <div class="roadmap-num">06</div>
+            <div class="roadmap-content">
+              <span class="roadmap-phase-tag" style="color:var(--neon-green);">CAREER DESTINATION</span>
+              <h3 class="roadmap-phase-title">Professional Ethical Hacker / Security Analyst</h3>
+              <p class="roadmap-phase-desc">Conducting comprehensive vulnerability assessments, red team exercises, and defensive hardening for enterprise technology organizations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         12. Ethics and Responsibility
+         ======================================================================== -->
+    <section class="portfolio-section" id="ethics">
+      <div class="container">
+        <div class="ethics-seal-wrapper reveal-card">
+          <div class="ethics-seal-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </div>
+          <h2 class="ethics-seal-title">Ethics, Integrity & Legal Responsibility</h2>
+          <p class="ethics-seal-quote">
+            "I firmly believe that technical prowess in offensive security is only meaningful when guided by unwavering ethics. 
+            <strong>I strictly practice vulnerability scanning, tool scripting, and penetration testing on systems and labs where I have explicit, authorized consent.</strong> 
+            My mission is to illuminate weaknesses so they can be fortified—never compromised."
+          </p>
+          <div class="ethics-rules-pills">
+            <span class="ethics-rule-pill">● 100% Authorized Scopes</span>
+            <span class="ethics-rule-pill">● Responsible Disclosure</span>
+            <span class="ethics-rule-pill">● No Malicious Exploits</span>
+            <span class="ethics-rule-pill">● Respect for Data Privacy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         13. Contact Section
+         ======================================================================== -->
+    <section class="portfolio-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">10. INITIATE TRANSMISSION</div>
+          <h2 class="section-title scramble-title" data-original-text="Get In Touch">Get In Touch</h2>
+          <p class="section-subtitle">Interested in offering an internship, collaborating on a project, or sharing cybersecurity mentorship? Send a message.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Info -->
+          <div class="contact-info-card reveal-card">
+            <h3 class="contact-info-title">Contact Coordinates</h3>
+            <p style="color:var(--text-secondary); font-size:0.95rem; margin-bottom:1.5rem;">
+              Currently based in Tamil Nadu, India. Open to internships, remote security labs, and hackathon teams.
+            </p>
+
+            <div class="contact-channels">
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Location</span>
+                  <span class="channel-value">Tamil Nadu, India</span>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Email</span>
+                  <span class="channel-value">
+                    <a href="mailto:aswinkumar1327@gmail.com">aswinkumar1327@gmail.com</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Mobile</span>
+                  <span class="channel-value">
+                    <a href="tel:8870535530">+91 8870535530</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">LinkedIn</span>
+                  <span class="channel-value">
+                    <a href="https://www.linkedin.com/in/aswin-kumar-j" target="_blank" rel="noopener noreferrer">linkedin.com/in/aswin-kumar-j</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.874 5.874 0 0 0 .349 1.017 5.928 5.928 0 0 0 1.905 2.502l2.364 1.765a1.442 1.442 0 0 0 .866.291 1.393 1.393 0 0 0 .96-.402 1.408 1.408 0 0 0 .408-.98 1.38 1.38 0 0 0-.422-.968l-2.316-1.727a3.17 3.17 0 0 1-1.026-1.343 3.036 3.036 0 0 1-.034-1.272 3.082 3.082 0 0 1 .667-1.144L9.07 9.87l4.413-4.717a1.4 1.4 0 0 0 .42-.992 1.384 1.384 0 0 0-.42-.962 1.37 1.37 0 0 0-.961-.439l-.039.24zM16.5 7.5a1.5 1.5 0 0 0-1.5 1.5v1.2a1.5 1.5 0 0 0 1.5 1.5h4.2a1.5 1.5 0 0 0 1.5-1.5V9a1.5 1.5 0 0 0-1.5-1.5h-4.2zm-2.827 7.77a1.384 1.384 0 0 0-.978.414 1.397 1.397 0 0 0-.415.987 1.394 1.394 0 0 0 .415.983l3.22 3.22a5.418 5.418 0 0 0 2.222 1.392 5.762 5.762 0 0 0 2.457.258 5.674 5.674 0 0 0 2.378-.857 5.474 5.474 0 0 0 1.737-1.892 5.378 5.378 0 0 0 .61-2.43 5.418 5.418 0 0 0-.585-2.457 5.452 5.452 0 0 0-1.725-1.92l-4.52-3.417a1.4 1.4 0 0 0-.853-.294 1.39 1.39 0 0 0-.977.41 1.39 1.39 0 0 0-.414.981 1.4 1.4 0 0 0 .414.986l4.485 3.39c.5.38.878.89 1.096 1.474.218.583.23 1.22.036 1.812a3.078 3.078 0 0 1-.986 1.472 3.195 3.195 0 0 1-1.637.586 3.226 3.226 0 0 1-1.716-.408 3.173 3.173 0 0 1-1.258-1.205l-3.196-3.196a1.38 1.38 0 0 0-.986-.419z"/></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">LeetCode</span>
+                  <span class="channel-value">
+                    <a href="https://leetcode.com/u/aswin1327/" target="_blank" rel="noopener noreferrer">leetcode.com/u/aswin1327</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">GitHub</span>
+                  <span class="channel-value">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/aswin1327</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Simulated PGP Fingerprint Box -->
+            <div class="pgp-box">
+              <div class="pgp-label">Simulated PGP Key Fingerprint</div>
+              <div class="pgp-fingerprint">
+                4D9A 28C1 9F04 B831 E640 102A 7B5C 882E 31A0
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Validated Cyber Contact Form -->
+          <div class="contact-form-card reveal-card">
+            <form id="cyber-contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">
+                  <span>Name</span>
+                  <span style="color:var(--neon-green);">*</span>
+                </label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Jane Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">
+                  <span>Email Address</span>
+                  <span style="color:var(--neon-green);">*</span>
+                </label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="jane@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-category" class="form-label">
+                  <span>Purpose / Subject</span>
+                </label>
+                <select id="contact-category" name="category" class="form-select">
+                  <option value="internship">Cybersecurity Internship Opportunity</option>
+                  <option value="collaboration">Project Collaboration / Hackathon</option>
+                  <option value="mentorship">Mentorship / Advice</option>
+                  <option value="general">General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">
+                  <span>Encrypted Payload (Message)</span>
+                  <span style="color:var(--neon-green);">*</span>
+                </label>
+                <textarea id="contact-message" name="message" class="form-textarea" placeholder="Describe the role, project, or question..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" id="contact-submit-btn" style="width:100%; justify-content:center;">
+                <span>[ TRANSMIT ENCRYPTED PACKET ]</span>
+              </button>
+
+              <div id="contact-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       14. Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <a href="#hero" class="footer-brand">AK_</a>
+        <p class="footer-quote">
+          "Built with passion, curiosity, and ethical responsibility."
+        </p>
+
+        <div class="footer-easter-egg">
+          💡 Tip: Try typing <span style="color:var(--neon-green);">help</span> or <span style="color:var(--neon-cyan);">matrix</span> in the terminal, or enter the Konami code: <span style="color:var(--neon-yellow);">↑ ↑ ↓ ↓ ← → ← → B A</span>.
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            © 2026 Aswin Kumar. All rights reserved. | SNS College of Technology.
+          </div>
+          <div>
+            <a href="#hero" class="btn-back-to-top" aria-label="Scroll back to top">
+              <span>Back to Top</span>
+              <span>↑</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Writeup & Resume Modal Reader -->
+  <div class="modal-backdrop" id="writeup-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Security Write-up Reader</h3>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- External Animation & Utility Libraries -->
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+  <!-- Application Logic -->
+  <script src="js/cyber-canvas.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/story-engine.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
