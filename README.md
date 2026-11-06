@@ -86,22 +86,15 @@ Search for `[PLACEHOLDER` in `index.html`, `js/terminal.js`, and `js/main.js` to
 ## 🚀 Deployment Guide
 
 ### 1. GitHub Pages (Free & Recommended)
-1. Initialize git and commit:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit of Aswin Kumar Cybersecurity Portfolio"
-   ```
-2. Create a new repository on [GitHub](https://github.com/new) named `portfolio` or `username.github.io`.
+1. Repository is already initialized and committed on `main`.
+2. Create an empty new repository on [GitHub](https://github.com/new) named `portfolio`.
 3. Push to GitHub:
    ```bash
-   git remote add origin https://github.com/<your-username>/<repo-name>.git
-   git branch -M main
    git push -u origin main
    ```
 4. Go to **Settings** > **Pages** in your GitHub repository.
 5. Under **Branch**, select `main` and root `/`, then click **Save**.
-6. Your live site will be ready at `https://<your-username>.github.io/<repo-name>/`.
+6. Your live site will be ready at `https://aswin1327.github.io/portfolio/`.
 
 ### 2. Netlify (Drag and Drop / Git)
 1. Go to [app.netlify.com](https://app.netlify.com/).
